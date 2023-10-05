@@ -1,0 +1,6 @@
+index.html
+dist
+node_modules
+webpack.config.js
+*.svg
+*.gitignore

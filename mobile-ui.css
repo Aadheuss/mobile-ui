@@ -1,0 +1,69 @@
+:root {
+  --m-nav-font: 1.05rem;
+  --m-nav-item-img-size: 2.75rem;
+  --m-nav-gap: 0.5em;
+  --m-nav-item-color: #777772; 
+  --m-nav-item-active-color: #289eff; 
+  --medium-padding-y: 0.8em;
+}  
+
+body {
+ margin: 0;
+ position: relative;
+ min-height: 100dvh;
+}
+
+.main-nav {
+  position: fixed;
+  display: flex;
+  margin: 0;
+  padding: var(--medium-padding-y) 0;
+  width: 100%;
+}
+
+.main-nav.top {
+  top: 0;
+}
+
+.main-nav.bottom {
+  bottom: 0;
+}
+
+.main-nav-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0;
+}
+
+.main-nav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: calc(calc(var(--m-nav-font) + var(--m-nav-item-img-size)) + var(--m-nav-gap));
+  list-style: none;
+  font-size: var(--m-nav-font);
+  font-weight: 700;
+  color: var(--m-nav-item-color);
+  border: none;
+  background: inherit;
+  transition: transform 300ms ease-in-out;
+}
+
+.main-nav-item::before {
+  content: "";
+  width: var(--m-nav-item-img-size);
+  height: var(--m-nav-item-img-size);
+  background-size: var(--m-nav-item-img-size);
+  background-image: url(./flag_FILL0.svg);
+}
+
+.main-nav-item.active::before {
+  background-image: url(./flag_FILL0_active.svg);
+}
+
+.main-nav-item.on-hover{
+  transform: translateY(-10px);
+}
