@@ -1,8 +1,3 @@
-function activateAllNavBar() {
-  const navBar = document.querySelectorAll(".main-nav");
-  activateNavItems(navBar);
-}
-
 function activateNavItems(nav) {
   if (!isNodeListEmpty(nav)) {
     nav.forEach((item) => activateNavBar(item));
@@ -76,4 +71,7 @@ function removeOnHover(target) {
   }
 }
 
-export { activateAllNavBar };
+export default function activateAllNavBar() {
+  const navBar = document.querySelectorAll(".main-nav");
+  activateNavItems(navBar);
+}
