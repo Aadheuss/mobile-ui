@@ -1,7 +1,7 @@
 {
   "name": "mobile-ui",
   "version": "1.0.0",
-  "description": "mobile friendly UI with its functionality",
+  "description": "mobile tab UI",
   "main": "./",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Aadheuss/mobile-ui/issues"
   },
