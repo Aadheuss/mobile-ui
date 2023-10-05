@@ -57,11 +57,6 @@ body {
   width: var(--m-nav-item-img-size);
   height: var(--m-nav-item-img-size);
   background-size: var(--m-nav-item-img-size);
-  background-image: url(./flag_FILL0.svg);
-}
-
-.main-nav-item.active::before {
-  background-image: url(./flag_FILL0_active.svg);
 }
 
 .main-nav-item.on-hover{

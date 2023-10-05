@@ -32,3 +32,15 @@ import activateAllNavBar from 'aadheuss-mobile-ui/mobile-ui'.
 import 'aadheuss-mobile-ui/mobile-ui.css'.
 use activateAllNavBar on you file.
 ```
+
+### on your css file
+
+```
+.main-nav-item::before {
+  background-image: url(./img);
+}
+
+.main-nav-item.active::before {
+  background-image: url(./img);
+}
+```
